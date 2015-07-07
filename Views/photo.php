@@ -4,8 +4,6 @@
   
   //счетчик рядов 
   $i = 0;
-  
-  //$altImg = $item['path'];
 ?>
 <!DOCTYPE html>
 <html lang="ru">
