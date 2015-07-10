@@ -19,24 +19,22 @@ class Sql {
     //Запрос на запись в бд без возврата
     public function sqlExec($query){
 
-        $db = $this->connect;
-        $db->query($query);
-        $db->close();
+        $this->connect->query($query);
+        $this->connect->close();
 
     }
 
     //Запрос с возвратом из бд
     public function sqlQuery($query){
 
-        $db = $this->connect;
-        $query = $db->query($query);
+        $query = $this->connect->query($query);
 
         $ret = [];
         while ( NULL !== $row = $query->fetch_assoc()) {
             $ret[] = $row;
         }
         $query->free();
-        $db->close();
+        $this->connect->close();
 
         return $ret;
 
