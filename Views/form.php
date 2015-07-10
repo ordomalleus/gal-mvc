@@ -1,4 +1,4 @@
-<form id="upload-file" action="Controller/addPhoto.php" method="post" enctype="multipart/form-data">
+<form id="upload-file" action="/Controller/addPhoto.php" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleInputFile">Загрузить Фотографию</label>
     <input type="file" id="exampleInputFile" name="img">

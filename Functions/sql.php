@@ -12,7 +12,6 @@ class Sql {
 
     public function __construct($serverBd,$userBd,$pwdBd,$baseBd){
 
-        //$serverBd = 'p:'.$serverBd;
         $this->connect = new mysqli($serverBd,$userBd,$pwdBd,$baseBd);
     }
 
@@ -27,16 +26,19 @@ class Sql {
     //Запрос с возвратом из бд
     public function sqlQuery($query){
 
-        $query = $this->connect->query($query);
+        if ($query = $this->connect->query($query)) {
 
-        $ret = [];
-        while ( NULL !== $row = $query->fetch_assoc()) {
-            $ret[] = $row;
+            $ret = [];
+            while (NULL !== $row = $query->fetch_assoc()) {
+                $ret[] = $row;
+            }
+            $query->free();
+            $this->connect->close();
+
+            return $ret;
+        } else {
+            return false;
         }
-        $query->free();
-        $this->connect->close();
-
-        return $ret;
 
     }
 }

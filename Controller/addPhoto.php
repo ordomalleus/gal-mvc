@@ -10,9 +10,10 @@ if (!empty($_POST)){
     $data['altName'] = $_POST['altName'];
   }
   if (!empty($_FILES)){
-    $res = fileUpload('img');
+      $res = new Files(__DIR__.'/../'.$config->filesDir.'/',$config->imgSucces);
+      $res = $res->fileUpload('img');
     if (false !== $res){
-      $data['img'] = $res;
+      $data['img'] = '/'.$config->filesDir.'/'.$res;
     }
   }
   if (isset($data['altName']) && isset($data['img'])){
@@ -23,9 +24,12 @@ if (!empty($_POST)){
     }else{
       $port = ':'.$port;
     }
-    $location = "http://".$_SERVER['SERVER_NAME'].$port."/".$dir;
-    photoInsert($data);
+    $location = "http://".$_SERVER['SERVER_NAME'].$port."/";
+      $query = "INSERT INTO img
+          (img, altName)
+          VALUES
+          ('".$data['img']."','".$data['altName']."')";
+    $modelPhoto->sqlExec($query);
     header('Location: '.$location);
   }
 }
-include_once __DIR__.'/../Views/formAddPhoto.php';

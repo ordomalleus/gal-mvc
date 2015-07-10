@@ -38,8 +38,8 @@
                 <div class="row">
               <?php endif; ?>
               <div class="col-md-3">
-                <a href="<?php echo $item['path']; ?>" class="gallery">
-                  <img src="<?php echo $item['path']; ?>" class="img-responsive img-thumbnail" alt="<?php echo $item['title']; ?>" />
+                <a href="<?php echo $item['img']; ?>" class="gallery">
+                  <img src="<?php echo $item['img']; ?>" class="img-responsive img-thumbnail" alt="<?php echo $item['altName']; ?>" />
                 </a>
               </div>
               <?php $i++; ?>

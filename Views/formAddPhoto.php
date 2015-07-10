@@ -23,7 +23,7 @@
       </div>
     </section>
     <section>
-      <a href="../index.php">Вернуться на главную</a>
+      <a href="/index.php">Вернуться на главную</a>
     </section>
   </body>
 </html>
