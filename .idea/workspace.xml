@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4b58772-2cad-40f6-89ed-5bfab7290aab" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361888810.2926.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361888900.3005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889000.3885.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889130.0578.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889230.3348.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889300.7105.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889370.9722.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361889450.623.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\PHP\htdocs\galery\files\galery\14361901910.4012.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions/sql.php" afterPath="$PROJECT_DIR$/Functions/sql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="galery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +32,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615" vertical-offset="51" max-vertical-offset="1071">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="31" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="51" max-vertical-offset="1071">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -51,8 +42,22 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <folding>
+                <marker date="1436548192273" expanded="true" signature="321:335" placeholder="SELECT * FRO..." />
+                <marker date="1436548192273" expanded="true" signature="321:338" placeholder="SELECT * FRO..img..." />
+                <marker date="1436548192273" expanded="true" signature="393:468" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Functions/sql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36127168" vertical-offset="141" max-vertical-offset="833">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -61,11 +66,11 @@
       <file leaf-file-name="photo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="459">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="28" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="36" />
               <folding>
-                <marker date="1436526462162" expanded="true" signature="113:127" placeholder="SELECT * FRO..." />
-                <marker date="1436526462162" expanded="true" signature="236:349" placeholder="INSERT INTO ..." />
+                <marker date="1436538609023" expanded="true" signature="113:127" placeholder="SELECT * FRO..." />
+                <marker date="1436538609023" expanded="true" signature="236:349" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -81,16 +86,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Functions/sql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.098265894" vertical-offset="0" max-vertical-offset="1836">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="55" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -100,8 +95,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/Functions/sql.php" />
+        <option value="$PROJECT_DIR$/Models/photo.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Functions/sql.php" />
       </list>
     </option>
   </component>
@@ -253,17 +249,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Models/photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="459">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <marker date="1436526462162" expanded="true" signature="113:127" placeholder="SELECT * FRO..." />
-            <marker date="1436526462162" expanded="true" signature="236:349" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Functions/file.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="765">
@@ -272,26 +257,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/Models/photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615" vertical-offset="51" max-vertical-offset="1071">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1436538609023" expanded="true" signature="113:127" placeholder="SELECT * FRO..." />
+            <marker date="1436538609023" expanded="true" signature="236:349" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <marker date="1436548192273" expanded="true" signature="321:335" placeholder="SELECT * FRO..." />
+            <marker date="1436548192273" expanded="true" signature="321:338" placeholder="SELECT * FRO..img..." />
+            <marker date="1436548192273" expanded="true" signature="393:468" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="51" max-vertical-offset="1071">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions/sql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.098265894" vertical-offset="0" max-vertical-offset="1836">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="55" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.36127168" vertical-offset="141" max-vertical-offset="833">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>

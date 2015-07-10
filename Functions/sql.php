@@ -5,99 +5,40 @@ include_once __DIR__.'/../config.php';
 class Sql {
 
     /**
-     * клас для работы с бд
+     * класc для работы с бд
      */
 
-    private $serverBd;
-    private $userBd;
-    private $pwdBd;
-    private $baseBd;
+    private $connect;
 
     public function __construct($serverBd,$userBd,$pwdBd,$baseBd){
-        $this->serverBd = $serverBd;
-        $this->userBd = $userBd;
-        $this->pwdBd = $pwdBd;
-        $this->baseBd = $baseBd;
-    }
 
-    //подключение к базе
-    public function sqlConnect(){
-
-        mysqli_connect($this->serverBd,$this->userBd,$this->pwdBd);
-        mysql_select_db($this->baseBd);
-
+        //$serverBd = 'p:'.$serverBd;
+        $this->connect = new mysqli($serverBd,$userBd,$pwdBd,$baseBd);
     }
 
     //Запрос на запись в бд без возврата
     public function sqlExec($query){
 
-        $this->sqlConnect();
-        mysql_query($query);
+        $db = $this->connect;
+        $db->query($query);
+        $db->close();
 
     }
 
     //Запрос с возвратом из бд
     public function sqlQuery($query){
 
-        $this->sqlConnect();
-
-        $res = mysql_query($query);
+        $db = $this->connect;
+        $query = $db->query($query);
 
         $ret = [];
-        while (false !== $row = mysql_fetch_assoc($res)) {
+        while ( NULL !== $row = $query->fetch_assoc()) {
             $ret[] = $row;
         }
+        $query->free();
+        $db->close();
 
         return $ret;
 
     }
 }
-
-$sql = new Sql($config->server, $config->user, $config->pwd, $config->bd);
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-//подключение к базе 
-function sqlConnect(){
-  
-  mysql_connect(SERVERBD, USERBD, PWDDB);
-  mysql_select_db(BASEBD);
-  
-}
-
-//выполнение запись в бд
-function sqlExec($query){
-  
-  sqlConnect();
-  
-  mysql_query($query);
-  
-}
-
-//выполнение произвольного запроса в бд с возвратом
-function sqlQuery($query){
-  
-  sqlConnect();
-  
-  $res = mysql_query($query);
-  
-  $ret = [];
-  while (false !== $row = mysql_fetch_assoc($res)) {
-    $ret[] = $row;
-  }
-  
-  return $ret;
-  
-}
-*/
